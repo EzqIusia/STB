@@ -65,7 +65,7 @@ proxies:
         Host: biznet.ordervip.cloud
     udp: true
 proxy-groups:
-  - name: FASTSSH-SSHKIT-HOWDY
+  - name: Ezqlusia
     type: select
     proxies:
       - Singapore
@@ -80,4 +80,4 @@ proxy-groups:
       - Singapore
       - Indonesian
 rules:
-  - MATCH,FASTSSH-SSHKIT-HOWDY
+  - MATCH,Ezqlusia
