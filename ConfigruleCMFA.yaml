@@ -32,51 +32,53 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: AKUN1
+  - name: WS
     server: quiz.int.vidio.com
     port: 80
     type: vmess
-    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    uuid: e4145c95-4fa1-4e2e-8a0a-056b9fde3db4
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: id2-ray.ipservers.xyz
+    servername: sgdo.ezqlusia.cloud
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /vmess
       headers:
-        Host: id2-ray.ipservers.xyz
+        Host: sgdo.ezqlusia.cloud
     udp: true
-  - name: AKUN2
-    server: quiz.int.vidio.com
+  - name: Indonesian
+    server: biznet.ordervip.cloud
     port: 443
-    type: vless
-    uuid: 9cf9a9b0-2e2e-45bd-ac6f-5eaa44e30cfe
+    type: vmess
+    uuid: 4d95279b-8c2e-4c6b-b6fc-8df203565b08
+    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id1vless.ipservers.xyz
+    servername: z-p15.www.instagram.com
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /vmess
       headers:
-        Host: id1vless.ipservers.xyz
+        Host: biznet.ordervip.cloud
     udp: true
-  - name: AKUN3
-    server: quiz.int.vidio.com
+  - name: Singapore
+    server: sgdo.ezqlusia.cloud
     port: 443
-    type: vless
-    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+    type: vmess
+    uuid: e4145c95-4fa1-4e2e-8a0a-056b9fde3db4
+    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id2vless.ipservers.xyz
+    servername: z-p15.www.instagram.com
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /vmess
       headers:
-        Host: id2vless.ipservers.xyz
+        Host: sgdo.ezqlusia.cloud
     udp: true
 
 proxy-groups:
@@ -85,18 +87,18 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - WS
+      - Indonesian
+      - Singapore
 
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - WS
+      - Indonesian
+      - Singapore
       
   - name: IKLAN
     type: select
